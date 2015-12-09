@@ -15,7 +15,7 @@ DTBIMAGE="dtb"
 DEFCONFIG="phasma_defconfig"
 
 # Kernel Details
-VER=".R7.bullhead."
+VER=".R8.bullhead."
 
 # Paths
 KERNEL_DIR=`pwd`
@@ -77,7 +77,7 @@ echo "Making Kylo Kernel:"
 echo "-----------------"
 echo -e "${restore}"
 
-while read -p "Do you want to use UBERTC 4.9(1) or UBERTC 5.2(2)? " echoice
+while read -p "Do you want to use UBERTC 4.9(1) or UBERTC 5.3(2)? " echoice
 do
 case "$echoice" in
 	1 )
@@ -88,8 +88,8 @@ case "$echoice" in
 		break
 		;;
 	2 )
-		export CROSS_COMPILE=${HOME}/android/uberbuild/out/aarch64-linux-android-5.2-kernel/bin/aarch64-linux-android-
-		TC="UBER5.2"
+		export CROSS_COMPILE=${HOME}/android/uberbuild/out/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
+		TC="UBER5.3"
 		echo
 		echo "Using SM"
 		break
