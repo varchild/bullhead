@@ -84,14 +84,28 @@ case "$echoice" in
 		export CROSS_COMPILE=${HOME}/android/uberbuild/out/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-
 		TC="UBER4.9"
 		echo
-		echo "Using UBERTC"
+		echo "Using UBERTC 4.9"
 		break
 		;;
 	2 )
 		export CROSS_COMPILE=${HOME}/android/uberbuild/out/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
 		TC="UBER5.3"
 		echo
-		echo "Using SM"
+		echo "Using UBERTC 5.3"
+		break
+		;;
+	3 )
+		export CROSS_COMPILE=${HOME}/android/linarobuild/out/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-
+		TC="LINARO4.9"
+		echo
+		echo "Using Linaro 4.9"
+		break
+		;;
+	4 )
+		export CROSS_COMPILE=${HOME}/android/linarobuild/out/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
+		TC="LINARO5.3"
+		echo
+		echo "Using Linaro 5.3"
 		break
 		;;
 	* )
